@@ -22,7 +22,7 @@ alert(error.response.data);
 return(
     <>
     <tr>
-        <td>{key.id}</td>
+        <td>{key.teacherid}</td>
         <td>{key.teachername}</td>
         <td>{key.subject}</td>
         <td>{key.salary}</td>
