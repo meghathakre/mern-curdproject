@@ -25,7 +25,21 @@ const teacherDataDisplay=async(req,res)=>{
         res.status(404).json("data from mongodb not found")
     }
 }
+const teacherDataSearch=async(req,res)=>{
+    try{
+        const myData=await teacherModel.find({treacherid:id})
+        res.status(200).json(myData);
+    }catch{
+        res.status(404).json("data from mongodb not found");
+    }
+}
+const  teacherUpate=async(req,res)=>{
+const Data=await teacherModel.find();
+res.send(Data)
+}
 module.exports={
     teacherDataSave,
-    teacherDataDisplay
+    teacherDataDisplay,
+    teacherDataSearch,
+    teacherUpate
 }

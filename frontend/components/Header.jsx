@@ -9,6 +9,7 @@ const Header =()=>{
             <Nav.Link as={Link} to="home">Home</Nav.Link>
             <Nav.Link as={Link} to="display">Display</Nav.Link>
             <Nav.Link as={Link} to="insert">Insert</Nav.Link>
+            <Nav.Link as={Link} to="search">Search</Nav.Link>
             
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

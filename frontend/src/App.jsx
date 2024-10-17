@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import Home from "../pages/Home";
 import Insert from "../pages/Insert";
 import Display from "../pages/Display";
+import Search from "../pages/Search";
 
 
 const App=()=>{
@@ -15,6 +16,7 @@ const App=()=>{
 <Route path="home" element={<Home/>}/>
 <Route path="display" element={<Display/>}/>
 <Route path="insert" element={<Insert/>}/>
+<Route path="search" element={<Search/>}/>
 
     </Route>
 </Routes>
