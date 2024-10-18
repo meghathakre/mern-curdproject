@@ -4,8 +4,10 @@ const teacherController=require("../controllers/TeacherController")
 
 route.post("/teachersave",teacherController.teacherDataSave );
 route.get("/teacherdisplay",teacherController.teacherDataDisplay);
-route.get("/teachersearch",teacherController.teacherDataSearch);
+route.post("/teachersearch",teacherController.teacherDataSearch);
 route.get("/teacherupdate",teacherController.teacherUpate);
+route.post("/teacherdatadelete",teacherController.teacherDataDelete);
+route.post("/teachedataedit",teacherController.teacherDataEdit);
 
 
 

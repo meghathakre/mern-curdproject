@@ -37,9 +37,21 @@ const  teacherUpate=async(req,res)=>{
 const Data=await teacherModel.find();
 res.send(Data)
 }
+const teacherDataDelete=async(req,res)=>{
+    const myid=req.body.id;
+    const teacher=await teacherModel.findByIdAndDelete(myid);
+    res.send("record deleted!")
+}
+const teacherDataEdit=async(req,res)=>{
+    const id=req.body.id;
+    const teacherdata=await teacherModel.findById(id);
+    res.send(teacherdata);
+}
 module.exports={
     teacherDataSave,
     teacherDataDisplay,
     teacherDataSearch,
-    teacherUpate
+    teacherUpate,
+    teacherDataDelete,
+    teacherDataEdit
 }
