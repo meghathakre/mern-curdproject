@@ -19,8 +19,8 @@ const App=()=>{
 <Route path="display" element={<Display/>}/>
 <Route path="insert" element={<Insert/>}/>
 <Route path="search" element={<Search/>}/>
-<Route path="search" element={<Update/>}/>
-<Route path="editdata:/id" element={<EditData/>}/>
+<Route path="update" element={<Update/>}/>
+<Route path="editdata/:teachid" element={<EditData/>}/>
 
     </Route>
 </Routes>

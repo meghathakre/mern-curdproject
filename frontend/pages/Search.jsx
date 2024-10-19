@@ -4,11 +4,11 @@ import Table from 'react-bootstrap/Table';
 import {message} from "antd";
 
 const Search=()=>{
-    const [teacherid,setId]=useState("");
+    const [teacherid,setteacherId]=useState("");
     const [mydata,setMydata]=useState([]);
 
     const handleSubmit =()=>{
-        let api="http//localhost:8000/teacher/teachersearch";
+        let api="http://localhost:8000/teacher/teachersearch";
         axios.post(api,{teacherid:teacherid}).then((res)=>{
             setMydata(res.data);
             if(res.data.length==0){
@@ -31,7 +31,7 @@ const Search=()=>{
     return(
         <>
         <h1>Serach Teacher Records</h1>
-        Enter Teacher id :<input type="text" value={teacherid} onChange={handleSubmit}/>
+        Enter Teacher id :<input type="text" value={teacherid} onChange={(e)=>{setteacherId(e.target.value)}}/>
         <button onClick={handleSubmit}>Search</button>
         <br /><br />
         <hr />

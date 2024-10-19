@@ -26,7 +26,7 @@ const Insert=()=>{
         <Form className='input'>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Teacher Id</Form.Label>
-        <Form.Control type="text" name="id"  value={input.id} placeholder="Enter email" onChange={handleInput} />
+        <Form.Control type="text" name="teacherid"  value={input.teacherid} placeholder="Enter email" onChange={handleInput} />
         <Form.Text className="text-muted">
          
         </Form.Text>
@@ -34,7 +34,7 @@ const Insert=()=>{
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Teacher Name</Form.Label>
-        <Form.Control type="email" name="name" value={input.name} placeholder="Enter email" onChange={handleInput}/>
+        <Form.Control type="email" name="name" value={input.teachername} placeholder="Enter email" onChange={handleInput}/>
         
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicPassword">

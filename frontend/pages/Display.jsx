@@ -18,6 +18,7 @@ alert(error.response.data);
     useEffect(()=>{
         loadData();
     },[]);
+
     const ans=mydata.map((key)=>{
 return(
     <>
