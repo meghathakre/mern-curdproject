@@ -6,7 +6,7 @@ const Display=()=>{
     const loadData=async()=>{
         let api="http://localhost:8000/teacher/teacherdisplay";
         try{
-            const response=await axios.get(api);
+            const response = await axios.get(api);
 setMydata(response.data);
 console.log(response.data);
         }catch(error){
